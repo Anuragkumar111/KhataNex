@@ -3,4 +3,5 @@ export default colors = {
   buttonBgColor: 'green',
   lightText: 'white',
   darkText: '#0C2C33',
+  iconColor: 'grey',
 };

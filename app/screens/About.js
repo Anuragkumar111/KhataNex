@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 import Button from './Button';
@@ -24,7 +24,7 @@ export default function About() {
         <MaterialIcons
           style={styles.icon}
           size={40}
-          color='grey'
+          color={colors.iconColor}
           name='more-horiz'
         />
         <Button title='Next' />
@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
   paragraph: {
     paddingLeft: 15,
     paddingRight: 15,
-    // fontSize: 15,
     color: colors.darkText,
   },
   top: {
