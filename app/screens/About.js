@@ -5,6 +5,11 @@ import Button from './Button';
 import colors from '../config/colors';
 
 export default function About() {
+  const handleonClickButton = () => {
+    // This function will execute when button will be clicked.
+    console.log('Button clicked');
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.top}>
@@ -27,7 +32,7 @@ export default function About() {
           color={colors.iconColor}
           name='more-horiz'
         />
-        <Button title='Next' />
+        <Button title='Next' handleonClickButton={handleonClickButton} />
       </View>
     </View>
   );

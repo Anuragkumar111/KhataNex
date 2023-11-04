@@ -3,7 +3,7 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 import colors from '../config/colors';
 
-export default function Button({ title }) {
+export default function Button({ title, handleonClickButton }) {
   return (
     <TouchableOpacity style={styles.button}>
       <Text style={{ color: colors.lightText }}>{title}</Text>
